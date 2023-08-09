@@ -3,7 +3,7 @@
 
 ## Introduction
 Next.js recently became the official React framework as outlined in React docs. In this course, you'll learn the most important Next.js concepts and how they fit into the React ecosystem. Finally, you'll put your skills to the test by building a modern full-stack Next 13 application.
- 
+
 In this video, you'll learn:
 - Next.js 13 App Folder Structure
 - Next.js 13 Client Components vs Server Components
@@ -16,6 +16,7 @@ In this video, you'll learn:
    - Static Site Generation (SSG)
    - Incremental Static Generation (ISR)
 
-## Want to land your dream programming job in 3 - 6 months?
-⭐ JSM Masterclass Experience - https://jsmastery.pro/masterclass
-Become a Software Engineer. Guaranteed.
+## Clone and some changed project of JSMastery for learn
+⭐  https://www.youtube.com/watch?v=wm5gMKuwSYk&t=8475s
+
+## 👍 Higly recommend Next 13!
