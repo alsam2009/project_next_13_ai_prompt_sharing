@@ -23,6 +23,7 @@ const Nav = () => {
       <Link href='/' className='flex gap-2 flex-center'>
         <Image
           src='/assets/images/logo.svg'
+          priority={false}
           alt='logo'
           width={30}
           height={30}
@@ -39,13 +40,17 @@ const Nav = () => {
               Create Post
             </Link>
 
-            <button type='button' onClick={signOut} className='outline_btn'>
+            <Link href='/api/auth/signout' className='outline_btn'>
+            Sign Out
+            </Link>
+
+            {/* <button type='button' onClick={signOut} className='outline_btn'>
               Sign Out
-            </button>
+            </button> */}
 
             <Link href='/profile'>
               <Image
-                src={session?.user.image}
+                src='/assets/images/logo.svg'
                 width={37}
                 height={37}
                 className='rounded-full'
@@ -56,18 +61,10 @@ const Nav = () => {
         ) : (
           <>
             {providers &&
-              Object.values(providers).map((provider) => (
-                <button
-                  type='button'
-                  key={provider.name}
-                  onClick={() => {
-                    signIn(provider.id);
-                  }}
-                  className='black_btn'
-                >
-                  Sign in
-                </button>
-              ))}
+                <Link href='/api/auth/signin' className='black_btn'>
+                  Sign In
+                </Link>
+              }
           </>
         )}
       </div>
@@ -77,7 +74,7 @@ const Nav = () => {
         {session?.user ? (
           <div className='flex'>
             <Image
-              src={session?.user.image}
+              src='/assets/images/logo.svg'
               width={37}
               height={37}
               className='rounded-full'
